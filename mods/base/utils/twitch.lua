@@ -36,7 +36,7 @@ local function ExecuteUpdateRoutine()
   end)
 end
 
--- get ranom viewer name
+-- get random viewer name
 local function GetRandomViewerName()
   for i = 1, 10 do
 	local viewer = viewers[math.random(#viewers)]
@@ -50,7 +50,7 @@ end
 
 -- is called if a viewer was hired
 local function OnEmployeeComponentUpdated(name)
-	employees[name] = true
+  employees[name] = true
 end
 
 return
